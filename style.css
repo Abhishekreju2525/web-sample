@@ -1,127 +1,187 @@
-html,body{
-    padding: 0;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 100vw;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 100vw;
 }
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  float: left;
+}
+nav {
+  padding: 20px;
+  height: 35px;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+nav a {
+  color: rgb(48, 48, 48);
+}
+
+nav a:hover {
+  color: rgb(0, 162, 22);
+}
+
+/* Slideshow code  */
+.slideshow {
+  height: 50vh;
+  width: 100vw;
+  margin: 0;
+
+  padding-bottom: 20px !important;
+  color: white;
   overflow: hidden;
-  float:left;
-  
 }
-nav{
-    padding: 20px;
-    height: 35px;
-    margin:0;
-    background-color: #ffffff;
+.slideshow h1 {
+  font-size: 70px;
+  margin-bottom: 0;
+}
+.slideshow h3 {
+  font-size: 23;
+  font-weight: 500;
+  margin-top: 0;
 }
 
-nav ul li{
-    display: inline;
-    margin-left:30px;
-    font-size: 18px;
+.slide-wrapper {
+  width: 400vw;
+  animation: slide 10s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 50vh;
+  padding-bottom: 20px !important;
+  width: 100vw;
+}
+
+.slide:nth-child(1) {
     
+  background-image: url("/images/cover.jpg");
+  background-size: cover;
 }
 
-a{
-    text-decoration: none;
-    
-}
-nav a{
-    color: rgb(48, 48, 48);
+.slide:nth-child(2) {
+  background-image: url("/images/cover.jpg");
+  background-size: cover;
 }
 
-nav a:hover{
-    color: rgb(0, 162, 22);
-}
-.head-container{
-    background-size: cover;
-    min-height:50vh;
-    max-width:100vw;
-    margin:0;
-    padding:30px;
-    background-image: url('/images/cover.jpg');
-    color:white;
-    overflow: hidden;
-
-}
-.head-container h1{
-    font-size:70px;
-    margin-bottom: 0;
-}
-.head-container h3{
-    font-size:23;
-font-weight: 500;
-    margin-top: 0;
-}
-.search-form{
-    float:right;
+.slide:nth-child(3) {
+  background-image: url("/images/cover.jpg");
+  background-size: cover;
 }
 
-.search-items{
-    
-    height:35px;
-    width:200px;
-    border-radius: 0;
-    margin-right:20px;
-    border:0;
-    border-bottom: 0.5px solid grey;
-}
-.button{
-    height:35px;
-    border:none;
-    width:80px;
-    border-radius:6px;
-    background-color: #009340;
-    color: white;
+.slide:nth-child(4) {
+  background-image: url("/images/cover.jpg");
+  background-size: cover;
 }
 
-h2{
-    color: #006b2e;
-    font-size: xx-large;
-    
+.slide-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
 }
 
-.main{
-    padding:40px;
+@keyframes slide {
+  20% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: -100vw;
+  }
+  50% {
+    margin-left: -100vw;
+  }
+  60% {
+    margin-left: -200vw;
+  }
+  70% {
+    margin-left: -200vw;
+  }
+  80% {
+    margin-left: -300vw;
+  }
+  90% {
+    margin-left: -300vw;
+  }
 }
-.main p{
-    text-align: justify;
-}
-.card-section{
-    background-color: rgb(234, 234, 234);
-    padding:40px;overflow: hidden;
-}
-.row{
-    display: flex;
-    margin: 0;
 
+.search-form {
+  float: right;
 }
-.card{
-    background-color: #ffffff;
-    border-radius: 10px;
-    width:20vw;
-    overflow: hidden;
-    margin: 10px;
-    
+
+.search-items {
+  height: 35px;
+  width: 200px;
+  border-radius: 0;
+  margin-right: 20px;
+  border: 0;
+  border-bottom: 0.5px solid grey;
 }
-.card img{
-    height:150px;
-    width:100%;overflow: hidden;
+.button {
+  height: 35px;
+  border: none;
+  width: 80px;
+  border-radius: 6px;
+  background-color: #009340;
+  color: white;
 }
-h4{
-    color: #006b2e;
-    margin: 0;overflow: hidden;
-    padding: 2px 20px 2px 2px;
-    font-size: x-large;
+
+h2 {
+  color: #006b2e;
+  font-size: xx-large;
 }
-.card-container{
-    margin: 0;
-    font-size: small;overflow: hidden;
-    color: rgb(108, 108, 108);
-    padding: 10px;
-    padding-bottom: 20px !important;
+
+.main {
+  padding: 40px;
+}
+.main p {
+  text-align: justify;
+}
+.card-section {
+  background-color: rgb(234, 234, 234);
+  padding: 40px;
+  overflow: hidden;
+}
+.row {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 20vw;
+  overflow: hidden;
+  margin: 10px;
+}
+.card img {
+  height: 150px;
+  width: 100%;
+}
+h4 {
+  color: #006b2e;
+  margin: 0;
+  padding: 2px 20px 2px 2px;
+  font-size: x-large;
+}
+.card-container {
+  margin: 0;
+  font-size: small;
+  color: rgb(108, 108, 108);
+  padding: 10px;
+  padding-bottom: 20px !important;
 }
