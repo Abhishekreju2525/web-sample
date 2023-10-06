@@ -70,22 +70,22 @@ nav a:hover {
 
 .slide:nth-child(1) {
     
-  background-image: url("/images/cover.jpg");
+  background-image: url("./images/cover.jpg");
   background-size: cover;
 }
 
 .slide:nth-child(2) {
-  background-image: url("/images/cover.jpg");
+  background-image: url("./images/cover.jpg");
   background-size: cover;
 }
 
 .slide:nth-child(3) {
-  background-image: url("/images/cover.jpg");
+  background-image: url("./images/cover.jpg");
   background-size: cover;
 }
 
 .slide:nth-child(4) {
-  background-image: url("/images/cover.jpg");
+  background-image: url("./images/cover.jpg");
   background-size: cover;
 }
 
